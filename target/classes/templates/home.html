@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин одежды и аксессуаров</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+        header {
+            background-color: #005b96;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+        }
+        .product-card button {
+            background-color: #005b96;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .product-card button:hover {
+            background-color: #00497a;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Магазин одежды</h1>
+    <nav>
+        <span th:text="'Привет, ' + ${username} + '!'"></span>
+        <a th:href="@{/home}">Главная</a>
+        <a th:href="@{/logout}">Выйти</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Популярные товары</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246" alt="Футболка">
+            <h3>Футболка</h3>
+            <p>₽ 799</p>
+            <button>Купить</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1520975918318-3e48e7f1e8e2" alt="Сумка">
+            <h3>Сумка</h3>
+            <p>₽ 2499</p>
+            <button>Купить</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Кроссовки">
+            <h3>Кроссовки</h3>
+            <p>₽ 4999</p>
+            <button>Купить</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e8efdd3c-9760-4092-bb45-8a8ac6c803d7" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2nISATQtGbJDInYbvHG7ECfIPMj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.FileUploadServer.executor": "Run",
+    "Application.femochka.executor": "Run",
+    "Application.practic_egerev.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.GooglePageObjectTest.executor": "Run",
+    "JUnit.RegistrationLoginTest.executor": "Run",
+    "JUnit.test in femochka.executor": "Run",
+    "Maven.femochka [clean,install,package].executor": "Run",
+    "Maven.femochka [clean].executor": "Run",
+    "Maven.femochka [install].executor": "Run",
+    "Maven.femochka [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
+    "Maven.femochka [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:help].executor": "Run",
+    "Maven.femochka.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Application.executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "X:/somethings/Java/practic_egerev/src/test/java",
+    "last_opened_file_path": "X:/somethings/Java/FEMKA33-PROJECT-20",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="X:\somethings\Java\FEMKA33-Project\src\main\resources\templates" />
+      <recent name="X:\somethings\Java\practic_egerev\src\test\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="X:\somethings\Java\practic_egerev\src\main\java\org\example\test" />
+      <recent name="X:\somethings\Java\practic_egerev\src\main\resources\templates" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.repository" />
+      <recent name="org.example.controller" />
+      <recent name="org.example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="femochka" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="femochka" />
+      <option name="PROGRAM_PARAMETERS" value="$MAVEN_REPOSITORY$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="practic_egerev" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.Application" />
+      <module name="femochka" />
+      <option name="PROGRAM_PARAMETERS" value="$MAVEN_REPOSITORY$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GooglePageObjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="femochka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.GooglePageObjectTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="femochka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.RegistrationLoginTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test in femochka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="femochka" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/org/example/test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="practic_egerev" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="femochka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.femochka" />
+      <item itemvalue="Application.practic_egerev" />
+      <item itemvalue="JUnit.RegistrationLoginTest" />
+      <item itemvalue="JUnit.GooglePageObjectTest" />
+      <item itemvalue="JUnit.test in femochka" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="TestNG.LoginTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RegistrationLoginTest" />
+        <item itemvalue="JUnit.GooglePageObjectTest" />
+        <item itemvalue="JUnit.test in femochka" />
+        <item itemvalue="TestNG.LoginTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8efdd3c-9760-4092-bb45-8a8ac6c803d7" name="Changes" comment="" />
+      <created>1728658956078</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728658956078</updated>
+      <workItem from="1728658957299" duration="2138000" />
+      <workItem from="1728661106592" duration="754000" />
+      <workItem from="1728661956911" duration="2221000" />
+      <workItem from="1728664257484" duration="617000" />
+      <workItem from="1728665045566" duration="379000" />
+      <workItem from="1728751047156" duration="3026000" />
+      <workItem from="1728832162534" duration="831000" />
+      <workItem from="1728836060677" duration="471000" />
+      <workItem from="1728901336631" duration="5282000" />
+      <workItem from="1728910944295" duration="623000" />
+      <workItem from="1728928331692" duration="1498000" />
+      <workItem from="1728976111801" duration="4917000" />
+      <workItem from="1729004522980" duration="1264000" />
+      <workItem from="1729080939678" duration="595000" />
+      <workItem from="1729087550036" duration="4445000" />
+      <workItem from="1729148472478" duration="2069000" />
+      <workItem from="1729180058157" duration="1568000" />
+      <workItem from="1729236270989" duration="9983000" />
+      <workItem from="1729250392322" duration="15047000" />
+      <workItem from="1729328317092" duration="1330000" />
+      <workItem from="1729345940450" duration="5004000" />
+      <workItem from="1729513887056" duration="2021000" />
+      <workItem from="1729604638916" duration="3340000" />
+      <workItem from="1729677828640" duration="2656000" />
+      <workItem from="1729691193080" duration="2168000" />
+      <workItem from="1729757025982" duration="519000" />
+      <workItem from="1729758134805" duration="485000" />
+      <workItem from="1729766743810" duration="974000" />
+      <workItem from="1729768153281" duration="359000" />
+      <workItem from="1729776849332" duration="2508000" />
+      <workItem from="1729785774440" duration="1468000" />
+      <workItem from="1729840330320" duration="3049000" />
+      <workItem from="1729847288076" duration="2691000" />
+      <workItem from="1729935584883" duration="6000" />
+      <workItem from="1730186288639" duration="1212000" />
+      <workItem from="1730293700587" duration="74000" />
+      <workItem from="1730818444583" duration="2467000" />
+      <workItem from="1731067109246" duration="2583000" />
+      <workItem from="1731152281902" duration="2462000" />
+      <workItem from="1731156870252" duration="209000" />
+      <workItem from="1731157093655" duration="1115000" />
+      <workItem from="1731158220771" duration="410000" />
+      <workItem from="1731345669384" duration="527000" />
+      <workItem from="1731511301321" duration="117000" />
+      <workItem from="1731656930679" duration="274000" />
+      <workItem from="1731934448097" duration="3644000" />
+      <workItem from="1732022781450" duration="2631000" />
+      <workItem from="1732026200934" duration="456000" />
+      <workItem from="1732039713832" duration="1812000" />
+      <workItem from="1732097005311" duration="7415000" />
+      <workItem from="1732118907868" duration="1345000" />
+      <workItem from="1732126066569" duration="2607000" />
+      <workItem from="1732173012531" duration="2737000" />
+      <workItem from="1732260112657" duration="2038000" />
+      <workItem from="1732377214183" duration="982000" />
+      <workItem from="1732462528080" duration="46000" />
+      <workItem from="1732468053882" duration="1071000" />
+      <workItem from="1732528810597" duration="2236000" />
+      <workItem from="1732546822991" duration="784000" />
+      <workItem from="1732610383520" duration="507000" />
+      <workItem from="1732611559558" duration="730000" />
+      <workItem from="1732630444397" duration="7495000" />
+      <workItem from="1732704027066" duration="6954000" />
+      <workItem from="1732716957191" duration="1702000" />
+      <workItem from="1732729822056" duration="64000" />
+      <workItem from="1732735224249" duration="622000" />
+      <workItem from="1732777837692" duration="974000" />
+      <workItem from="1732799422897" duration="185000" />
+      <workItem from="1732805308490" duration="14000" />
+      <workItem from="1732866405723" duration="356000" />
+      <workItem from="1733046447711" duration="534000" />
+      <workItem from="1733049261012" duration="2116000" />
+      <workItem from="1733071913526" duration="613000" />
+      <workItem from="1733140667195" duration="1761000" />
+      <workItem from="1733150666745" duration="799000" />
+      <workItem from="1733152475188" duration="146000" />
+      <workItem from="1733218426829" duration="290000" />
+      <workItem from="1733222340706" duration="652000" />
+      <workItem from="1733236899150" duration="7880000" />
+      <workItem from="1733309193952" duration="8050000" />
+      <workItem from="1733327648674" duration="2130000" />
+      <workItem from="1733345466448" duration="2273000" />
+      <workItem from="1733378571973" duration="8000" />
+      <workItem from="1733740822612" duration="1820000" />
+      <workItem from="1733755565853" duration="3669000" />
+      <workItem from="1733762709424" duration="7000" />
+      <workItem from="1733841661236" duration="572000" />
+      <workItem from="1733917409328" duration="1487000" />
+      <workItem from="1733927593470" duration="3576000" />
+      <workItem from="1733942168608" duration="1406000" />
+      <workItem from="1733954972389" duration="1130000" />
+      <workItem from="1733980385304" duration="1597000" />
+      <workItem from="1733988761397" duration="67000" />
+      <workItem from="1734428006100" duration="16000" />
+      <workItem from="1734516725047" duration="3153000" />
+      <workItem from="1735551109276" duration="315000" />
+      <workItem from="1735557631138" duration="641000" />
+      <workItem from="1735835200260" duration="1072000" />
+      <workItem from="1743958583700" duration="119000" />
+      <workItem from="1744468084693" duration="2150000" />
+      <workItem from="1744567380436" duration="1154000" />
+      <workItem from="1745439902130" duration="278000" />
+      <workItem from="1745500672395" duration="558000" />
+      <workItem from="1745501903442" duration="1288000" />
+      <workItem from="1745503415936" duration="734000" />
+      <workItem from="1749542744961" duration="1343000" />
+      <workItem from="1749628196094" duration="18000" />
+      <workItem from="1749628448752" duration="12000" />
+      <workItem from="1749629445428" duration="6000" />
+      <workItem from="1749646458572" duration="487000" />
+      <workItem from="1749646958406" duration="1285000" />
+      <workItem from="1749711381897" duration="21000" />
+      <workItem from="1749988201696" duration="1592000" />
+      <workItem from="1750057940615" duration="8374000" />
+      <workItem from="1750068049014" duration="6386000" />
+      <workItem from="1750077733358" duration="1524000" />
+      <workItem from="1750079324450" duration="465000" />
+      <workItem from="1750081302295" duration="348000" />
+      <workItem from="1750081667585" duration="1137000" />
+      <workItem from="1750153435637" duration="72000" />
+      <workItem from="1750157894124" duration="1917000" />
+      <workItem from="1750159842955" duration="610000" />
+      <workItem from="1750178272070" duration="401000" />
+      <workItem from="1750228652448" duration="4741000" />
+      <workItem from="1750251596760" duration="156000" />
+      <workItem from="1750253773924" duration="803000" />
+      <workItem from="1750320195266" duration="143000" />
+      <workItem from="1750354188719" duration="848000" />
+      <workItem from="1750402848862" duration="6154000" />
+      <workItem from="1750427714717" duration="1237000" />
+      <workItem from="1750500247459" duration="178000" />
+      <workItem from="1750506746232" duration="1266000" />
+      <workItem from="1750519650638" duration="1157000" />
+      <workItem from="1750605876120" duration="2514000" />
+      <workItem from="1750612274351" duration="526000" />
+      <workItem from="1750663011435" duration="11789000" />
+      <workItem from="1750759357265" duration="600000" />
+      <workItem from="1750765714682" duration="2063000" />
+      <workItem from="1750781149893" duration="25000" />
+      <workItem from="1750781573056" duration="895000" />
+      <workItem from="1750834291848" duration="7755000" />
+      <workItem from="1750850549498" duration="1231000" />
+      <workItem from="1750860103497" duration="623000" />
+      <workItem from="1750930036744" duration="5605000" />
+      <workItem from="1750944304292" duration="994000" />
+      <workItem from="1751008616696" duration="1711000" />
+      <workItem from="1751121906270" duration="4682000" />
+      <workItem from="1751193768955" duration="675000" />
+      <workItem from="1751214061081" duration="5690000" />
+      <workItem from="1751227460562" duration="3228000" />
+      <workItem from="1751232540234" duration="499000" />
+      <workItem from="1751267900671" duration="6650000" />
+      <workItem from="1751274602848" duration="135000" />
+      <workItem from="1751274748192" duration="14790000" />
+      <workItem from="1751443905977" duration="1576000" />
+      <workItem from="1752072413642" duration="385000" />
+      <workItem from="1752848386866" duration="2336000" />
+      <workItem from="1752910546785" duration="4662000" />
+      <workItem from="1752937010155" duration="1324000" />
+      <workItem from="1752938352559" duration="2807000" />
+      <workItem from="1753712094555" duration="645000" />
+      <workItem from="1753712761167" duration="3109000" />
+      <workItem from="1753970374413" duration="827000" />
+      <workItem from="1753971334530" duration="602000" />
+      <workItem from="1754049719967" duration="2028000" />
+      <workItem from="1754052696087" duration="209000" />
+      <workItem from="1754052915719" duration="586000" />
+      <workItem from="1754238421931" duration="150000" />
+      <workItem from="1754238827601" duration="779000" />
+      <workItem from="1754239623288" duration="1145000" />
+      <workItem from="1754240785224" duration="870000" />
+      <workItem from="1754317070021" duration="2460000" />
+      <workItem from="1754321203436" duration="146000" />
+      <workItem from="1754399689257" duration="1079000" />
+      <workItem from="1754494792379" duration="5132000" />
+      <workItem from="1754925862928" duration="391000" />
+      <workItem from="1754926268470" duration="1270000" />
+      <workItem from="1755163988956" duration="2847000" />
+      <workItem from="1755599292333" duration="3063000" />
+      <workItem from="1755682552945" duration="3036000" />
+      <workItem from="1757147242547" duration="2993000" />
+      <workItem from="1757244347512" duration="949000" />
+      <workItem from="1757266185101" duration="425000" />
+      <workItem from="1757350148863" duration="705000" />
+      <workItem from="1757351138288" duration="77000" />
+      <workItem from="1757414885432" duration="613000" />
+      <workItem from="1757432803225" duration="852000" />
+      <workItem from="1757495961298" duration="503000" />
+      <workItem from="1757496537493" duration="3579000" />
+      <workItem from="1757510971761" duration="3818000" />
+      <workItem from="1757592065920" duration="703000" />
+      <workItem from="1758024362974" duration="113000" />
+      <workItem from="1758117435116" duration="5821000" />
+      <workItem from="1758196400023" duration="34000" />
+      <workItem from="1758656598113" duration="1572000" />
+      <workItem from="1758719210958" duration="21000" />
+      <workItem from="1758723275002" duration="601000" />
+      <workItem from="1759144595871" duration="1095000" />
+      <workItem from="1759152417044" duration="777000" />
+      <workItem from="1759153890292" duration="1453000" />
+      <workItem from="1759248222383" duration="1587000" />
+      <workItem from="1759249847136" duration="774000" />
+      <workItem from="1759321311238" duration="213000" />
+      <workItem from="1759562572846" duration="1565000" />
+      <workItem from="1759564389510" duration="3844000" />
+      <workItem from="1759679238362" duration="1021000" />
+      <workItem from="1759742891966" duration="25000" />
+      <workItem from="1759833429951" duration="114000" />
+      <workItem from="1759858218506" duration="1678000" />
+      <workItem from="1759917684761" duration="936000" />
+      <workItem from="1759919802566" duration="49000" />
+      <workItem from="1760016923374" duration="357000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

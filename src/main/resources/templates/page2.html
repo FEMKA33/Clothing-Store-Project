@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+<h1>Это вторая страница!</h1>
+<p>Вы успешно перешли с главной страницы</p>
+
+<a th:href="@{/}">
+    <button>Вернуться на главную</button>
+</a>
+</body>
+</html>

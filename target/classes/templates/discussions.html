@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>Обсуждения</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body class="container mt-4">
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1>Обсуждения</h1>
+    <div>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">Создать обсуждение</button>
+        <a th:href="@{/logout}" class="btn btn-outline-secondary">Выйти</a>
+    </div>
+</div>
+
+<div id="list" class="list-group">
+    <a th:each="d : ${discussions}" th:href="@{/discussions/{id}(id=${d.id})}"
+       class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 th:text="${d.title}">Title</h5>
+            <small th:text="${#temporals.format(d.createdAt, 'yyyy-MM-dd HH:mm')}">date</small>
+        </div>
+        <p th:text="${d.description}">description</p>
+        <small>Автор: <span th:text="${d.author.username}">user</span> · Сообщений: <span th:text="${d.messages.size()}">0</span></small>
+    </a>
+</div>
+
+<!-- Create modal -->
+<div class="modal fade" id="createModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="createDiscussionForm">
+                <div class="modal-header">
+                    <h5 class="modal-title">Создать обсуждение</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Заголовок</label>
+                        <input id="title" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Описание</label>
+                        <textarea id="description" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-primary">Создать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('createDiscussionForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const title = document.getElementById('title').value.trim();
+        const description = document.getElementById('description').value.trim();
+        if (!title) { alert('Введите заголовок'); return; }
+        const res = await fetch('/api/discussions', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({ title, description })
+        });
+        if (res.ok) location.reload();
+        else alert('Ошибка создания обсуждения');
+    });
+</script>
+</body>
+</html>
