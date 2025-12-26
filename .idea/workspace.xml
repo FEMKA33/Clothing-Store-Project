@@ -4,7 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8efdd3c-9760-4092-bb45-8a8ac6c803d7" name="Changes" comment="" />
+    <list default="true" id="e8efdd3c-9760-4092-bb45-8a8ac6c803d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/config/DataLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CatalogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/FavoriteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Favorite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/CartItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/FavoriteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/FavoriteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/cart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/загружено.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/favorites.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/ChatWebSocketHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/ChatWebSocketHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/VerificationCodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/VerificationCodeGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/controller/ApplicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/controller/ApplicationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/controller/PasswordResetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/controller/PasswordResetController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/controller/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/CommentMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/CommentMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/PasswordResetToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/PasswordResetToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/UserEntity$UserEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/UserEntity$UserEntityBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/UserEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/UserRegistrationDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/UserRegistrationDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/repository/PasswordResetTokenRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/repository/PasswordResetTokenRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/service/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/service/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/service/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/service/PasswordResetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/service/PasswordResetService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/test/GooglePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/test/GooglePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/test/GooglePageObjectTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/test/GooglePageObjectTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/test/GoogleSearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/test/GoogleSearchTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/test/PalindromeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/test/PalindromeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/test/RegistrationLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/test/RegistrationLoginTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +76,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -58,7 +123,8 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "X:/somethings/Java/practic_egerev/src/test/java",
-    "last_opened_file_path": "X:/somethings/Java/FEMKA33-PROJECT-20",
+    "last_opened_file_path": "X:/somethings/Java/WEB-FEMKA33",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,6 +139,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="X:\somethings\Java\FEMKA33-PROJECT-20\src\main\resources\static\images" />
       <recent name="X:\somethings\Java\FEMKA33-Project\src\main\resources\templates" />
       <recent name="X:\somethings\Java\practic_egerev\src\test\java" />
     </key>
@@ -171,8 +238,8 @@
     <list>
       <item itemvalue="Application.femochka" />
       <item itemvalue="Application.practic_egerev" />
-      <item itemvalue="JUnit.RegistrationLoginTest" />
       <item itemvalue="JUnit.GooglePageObjectTest" />
+      <item itemvalue="JUnit.RegistrationLoginTest" />
       <item itemvalue="JUnit.test in femochka" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="TestNG.LoginTest" />
@@ -413,7 +480,47 @@
       <workItem from="1759858218506" duration="1678000" />
       <workItem from="1759917684761" duration="936000" />
       <workItem from="1759919802566" duration="49000" />
-      <workItem from="1760016923374" duration="357000" />
+      <workItem from="1760016923374" duration="695000" />
+      <workItem from="1760386037682" duration="76000" />
+      <workItem from="1760533649078" duration="13000" />
+      <workItem from="1760539339438" duration="3796000" />
+      <workItem from="1760544651427" duration="14000" />
+      <workItem from="1760640699311" duration="2309000" />
+      <workItem from="1760894872697" duration="1997000" />
+      <workItem from="1760909138568" duration="1069000" />
+      <workItem from="1760957649291" duration="26000" />
+      <workItem from="1761059496670" duration="1469000" />
+      <workItem from="1761067834916" duration="3537000" />
+      <workItem from="1761071466494" duration="52000" />
+      <workItem from="1761139028225" duration="933000" />
+      <workItem from="1761577412931" duration="2075000" />
+      <workItem from="1761651169803" duration="14000" />
+      <workItem from="1761651202988" duration="14000" />
+      <workItem from="1761828826133" duration="2632000" />
+      <workItem from="1761925670815" duration="10000" />
+      <workItem from="1762776058167" duration="22000" />
+      <workItem from="1763552938474" duration="3152000" />
+      <workItem from="1763558629218" duration="225000" />
+      <workItem from="1763558915854" duration="4000" />
+      <workItem from="1763559094897" duration="1167000" />
+      <workItem from="1763916677791" duration="325000" />
+      <workItem from="1763980107944" duration="25000" />
+      <workItem from="1764160910249" duration="1222000" />
+      <workItem from="1764349629990" duration="7000" />
+      <workItem from="1764679741710" duration="85000" />
+      <workItem from="1765221237929" duration="17000" />
+      <workItem from="1765885078124" duration="824000" />
+      <workItem from="1765886952448" duration="419000" />
+      <workItem from="1766310877840" duration="2425000" />
+      <workItem from="1766333088639" duration="608000" />
+      <workItem from="1766334029973" duration="226000" />
+      <workItem from="1766407622533" duration="656000" />
+      <workItem from="1766408416070" duration="1405000" />
+      <workItem from="1766411112852" duration="2862000" />
+      <workItem from="1766477477676" duration="1233000" />
+      <workItem from="1766487846163" duration="311000" />
+      <workItem from="1766488462433" duration="1269000" />
+      <workItem from="1766489810370" duration="1954000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="content">
+
+    <h2>Админ-панель</h2>
+    <a href="/admin/add" class="btn primary" style="margin:10px 0; display:inline-block;">
+        + Добавить товар
+    </a>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Название</th>
+            <th>Бренд</th>
+            <th>Цена</th>
+            <th>Изображение</th>
+            <th>Скидка</th>
+            <th>Цена со скидкой</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="p : ${products}">
+            <td th:text="${p.id}"></td>
+            <td th:text="${p.title}"></td>
+            <td th:text="${p.brand}"></td>
+
+            <td>
+                <span th:if="${!p.discount}" th:text="${p.price} + ' ₽'"></span>
+                <span th:if="${p.discount}">
+                <del th:text="${p.oldPrice} + ' ₽'"></del>
+            </span>
+            </td>
+
+            <td>
+                <img th:src="${p.imageUrl}" width="60" />
+            </td>
+
+            <td>
+                <span th:if="${p.discount}" style="color:red;">Да</span>
+                <span th:if="${!p.discount}">Нет</span>
+            </td>
+
+            <td>
+                <span th:if="${p.discount}" th:text="${p.price} + ' ₽'"></span>
+                <span th:if="${!p.discount}">—</span>
+            </td>
+
+            <td>
+                <a th:href="@{/admin/edit/{id}(id=${p.id})}" class="btn">Редактировать</a>
+                <a th:href="@{/admin/delete/{id}(id=${p.id})}" class="btn danger">Удалить</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>

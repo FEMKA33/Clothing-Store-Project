@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div th:fragment="content" class="checkout-page container">
+
+    <h1>Оформление заказа</h1>
+
+    <div class="order-summary">
+        <h3>Ваш заказ:</h3>
+        <ul id="orderItems"></ul>
+        <p><strong>Итого:</strong> <span id="orderTotal">0 ₽</span></p>
+    </div>
+
+    <form id="checkoutForm" class="checkout-form">
+        <label>Имя</label>
+        <input type="text" name="name" required>
+
+        <label>Адрес доставки</label>
+        <input type="text" name="address" required>
+
+        <label>Номер телефона</label>
+        <input type="tel" name="phone" required pattern="\\+?[0-9\\- ]{7,}">
+
+        <button type="submit" class="btn primary">Подтвердить заказ</button>
+    </form>
+
+    <!-- Блок имитации оплаты -->
+    <div id="paymentOverlay" class="payment-overlay hidden">
+        <div class="payment-box">
+            <div id="paymentText">Обработка оплаты...</div>
+            <div class="loader"></div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const orderItems = document.getElementById("orderItems");
+        const orderTotal = document.getElementById("orderTotal");
+        const overlay = document.getElementById("paymentOverlay");
+        const paymentText = document.getElementById("paymentText");
+
+        // Заполнение заказа из корзины
+        let total = 0;
+        cart.forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = `${item.name} — ${item.quantity} шт × ${item.price.toFixed(2)} ₽`;
+            orderItems.appendChild(li);
+            total += item.price * item.quantity;
+        });
+        orderTotal.textContent = total.toFixed(2) + " ₽";
+
+        // Отправка формы
+        document.getElementById("checkoutForm").addEventListener("submit", e => {
+            e.preventDefault();
+            overlay.classList.remove("hidden");
+
+            // "Имитация оплаты"
+            setTimeout(() => {
+                paymentText.textContent = "Оплата успешно проведена ✅";
+
+                // Очистить корзину
+                localStorage.removeItem("cart");
+
+                setTimeout(() => {
+                    window.location.href = "/"; // Перенаправление на главную
+                }, 2000);
+            }, 3000);
+        });
+    });
+</script>
+
+<style>
+    .checkout-page {
+        padding: 30px 0;
+    }
+
+    .order-summary {
+        margin-bottom: 20px;
+        background: #fff;
+        padding: 16px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .checkout-form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background: #fff;
+        padding: 16px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .checkout-form input {
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    .btn.primary {
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    .btn.primary:hover {
+        background: #0056b3;
+    }
+
+    /* Оверлей оплаты */
+    .payment-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+    }
+
+    .payment-overlay.hidden {
+        display: none;
+    }
+
+    .payment-box {
+        background: #fff;
+        padding: 40px 60px;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 1.2rem;
+        position: relative;
+    }
+
+    .loader {
+        margin: 20px auto;
+        border: 4px solid #ccc;
+        border-top: 4px solid #007bff;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+</style>
+</body>
+</html>

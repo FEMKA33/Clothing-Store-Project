@@ -1,0 +1,52 @@
+    <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="content">
+    <style>
+        .success-container {
+            max-width: 600px;
+            margin: 80px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 40px;
+            text-align: center;
+        }
+
+        .success-container h2 {
+            color: #16a34a;
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+
+        .success-container p {
+            color: #4b5563;
+        }
+
+        .btn {
+            background-color: #2563eb;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 24px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+
+    <div class="success-container">
+        <h2>Спасибо за заказ 💙</h2>
+        <p>Мы уже обрабатываем ваш заказ. В ближайшее время с вами свяжется менеджер.</p>
+
+        <form th:action="@{/home}" method="get">
+            <button class="btn">Вернуться на главную</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

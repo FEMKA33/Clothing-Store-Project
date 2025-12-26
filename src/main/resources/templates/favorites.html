@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:fragment="content">
+
+    <div class="controls">
+        <h2>Избранное</h2>
+        <div>
+            <span th:text="'Найдено: ' + ${products.size()}"></span>
+        </div>
+    </div>
+
+    <div class="products-grid">
+
+        <div class="product-card" th:each="p : ${products}">
+
+            <!-- ❤️ Избранное -->
+            <button class="favorite-btn active"
+                    th:attr="data-product-id=${p.id}"
+                    title="Убрать из избранного">
+                ♥
+            </button>
+
+            <img class="media"
+                 th:src="@{${p.imageUrl}}"
+                 th:alt="${p.title}" />
+
+            <div class="body">
+                <h3 th:text="${p.title}">Название товара</h3>
+
+                <div style="font-size:13px;color:#6b7280;margin-top:6px;"
+                     th:text="${p.brand}">
+                    Бренд
+                </div>
+
+                <div class="price"
+                     th:text="${#numbers.formatDecimal(p.price, 0, 2)}">
+                    ₽1000
+                </div>
+
+                <div class="meta">
+                    <button class="card-btn ghost">
+                        Подробнее
+                    </button>
+
+                    <button class="add-to-cart"
+                            th:data-id="${p.id}"
+                            th:data-title="${p.title}"
+                            th:data-price="${p.price}"
+                            th:data-img="${p.imageUrl}"
+                            th:data-brand="${p.brand}">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

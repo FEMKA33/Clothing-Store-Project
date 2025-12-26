@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+    <title th:text="${pageTitle ?: 'Каталог'}">Каталог</title>
+    <style>
+        .favorite-btn { color: gray; cursor: pointer; }
+        .favorite-btn.active { color: red; }
+    </style>
+</head>
+
+
+
+
+<body>
+
+<div th:fragment="content">
+
+    <div class="controls">
+        <h2 th:text="${pageTitle ?: 'Каталог'}">Каталог</h2>
+        <div>
+            <span th:text="'Найдено: ' + ${products.size()}"></span>
+        </div>
+    </div>
+
+    <div class="products-grid">
+        <div class="product-card" th:each="p : ${products}">
+
+            <button class="favorite-btn"
+                    th:classappend="${favoriteIds != null and favoriteIds.contains(p.id)} ? ' active' : ''"
+                    th:data-product-id="${p.id}"
+                    th:onclick="'toggleFavorite(' + ${p.id} + ', this)'"
+                    title="В избранное">
+                ♥
+            </button>
+
+            <img class="media"
+                 th:src="${p.imageUrl}"
+                 th:alt="${p.title}" />
+
+            <div class="body">
+                <h3 th:text="${p.title}">Название товара</h3>
+                <div style="font-size:13px;color:#6b7280;margin-top:6px;" th:text="${p.brand}">Бренд</div>
+                <div class="price" th:text="${#numbers.formatDecimal(p.price, 0, 2)}">₽1000</div>
+
+                <div class="meta">
+                    <button class="card-btn ghost">Подробнее</button>
+                    <button class="add-to-cart"
+                            th:data-id="${p.id}"
+                            th:data-title="${p.title}"
+                            th:data-price="${p.price}"
+                            th:data-img="${p.imageUrl}"
+                            th:data-brand="${p.brand}">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+    const csrfToken = document.querySelector('meta[name="_csrf"]').getAttribute('content');
+    const csrfHeader = document.querySelector('meta[name="_csrf_header"]').getAttribute('content');
+
+    window.toggleFavorite = async function(productId, btn) {
+        try {
+            const res = await fetch(`/favorites/toggle/${productId}`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    [csrfHeader]: csrfToken
+                }
+            });
+
+            if (res.ok) {
+                btn.classList.toggle("active");
+            } else {
+                const text = await res.text().catch(() => res.statusText);
+                alert("Ошибка при добавлении в избранное: " + text);
+            }
+        } catch (err) {
+            console.error(err);
+            alert("Ошибка при добавлении в избранное");
+        }
+    };
+</script>
+
+</body>
+</html>

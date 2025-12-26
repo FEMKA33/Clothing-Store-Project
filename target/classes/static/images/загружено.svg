@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="36" viewBox="0 0 160 36" fill="none">
+  <rect rx="6" width="160" height="36" fill="#ffffff"></rect>
+  <g transform="translate(6,4)">
+    <!-- Иконка футболки -->
+    <path d="M8 0 L12 0 L14 4 L18 4 L18 14 C18 18 16 20 12 20 L4 20 C0 20 -2 18 -2 14 L-2 4 L2 4 L4 0 L8 0 Z" transform="translate(0,0) scale(0.9)" fill="#005b96"></path>
+    <!-- YOStore текст -->
+    <text x="36" y="16" font-family="Segoe UI, Roboto, Arial" font-size="16" font-weight="700" fill="#005b96">YOStore</text>
+  </g>
+</svg>

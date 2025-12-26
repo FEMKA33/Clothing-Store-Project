@@ -63,12 +63,18 @@ public class SecurityConfig {
                                 "/forgot-password",
                                 "/reset-password"
                         ).permitAll()
+                        .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
                 .formLogin(form -> form
                         .loginPage("/login")
                         .defaultSuccessUrl("/home", true)
                         .permitAll()
+                )
+                .rememberMe(remember -> remember
+                        .key("very-secret-key-123")
+                        .tokenValiditySeconds(60 * 60 * 24 * 14)
+                        .userDetailsService(userDetailsService())
                 )
                 .logout(logout -> logout
                         .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
@@ -79,7 +85,8 @@ public class SecurityConfig {
                         .ignoringRequestMatchers(
                                 "/ws/**",
                                 "/h2-console/**",
-                                "/api/**"
+                                "/api/**",
+                                "/cart/**"
                         )
                 )
                 .headers(headers -> headers

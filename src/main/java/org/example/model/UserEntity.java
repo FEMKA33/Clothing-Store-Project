@@ -26,6 +26,7 @@ public class UserEntity {
 
     private String email;
 
+    @Column(nullable = false)
     private String role;
 }
 

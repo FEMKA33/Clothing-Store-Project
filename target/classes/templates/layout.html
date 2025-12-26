@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title th:text="${pageTitle ?: 'YOStore - Магазин одежды'}">YOStore</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <link rel="stylesheet" th:href="@{/css/cart.css}" />
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+</head>
+<body>
+
+<header class="topbar">
+
+
+    <div class="search" style="flex:1;">
+        <form th:action="@{/catalog}" method="get">
+            <input type="text" name="q" placeholder="Искать товары, бренды и др." th:value="${q}">
+        </form>
+    </div>
+
+    <nav class="nav-links">
+        <a th:href="@{/home}">Главная</a>
+        <a th:href="@{/catalog}">Каталог</a>
+        <a th:href="@{/favorites}">Избранное</a>
+        <a th:href="@{/cart}">Корзина</a>
+    </nav>
+
+    <div class="actions">
+        <a th:href="@{/profile}" class="icon-btn">Пр</a>
+
+        <div class="cart-wrapper">
+            <button id="miniCartBtn" class="icon-btn cart-icon" aria-haspopup="true" aria-expanded="false">
+                <!-- Можно заменить emoji на svg -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="vertical-align:middle">
+                    <path d="M6 6h15l-1.5 9h-12z" stroke="#374151" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="9" cy="20" r="1" fill="#374151"/>
+                    <circle cx="18" cy="20" r="1" fill="#374151"/>
+                </svg>
+                <span class="sr-only">Корзина</span>
+                <span id="cartCount" class="cart-count">0</span>
+            </button>
+
+            <div id="miniCartDropdown" class="mini-cart-dropdown" aria-hidden="true">
+                <div class="mini-cart-header">
+                    <strong>Корзина</strong>
+                    <button id="miniCartClear" title="Очистить корзину" class="card-btn ghost">Очистить</button>
+                </div>
+
+                <div id="miniCartItems" class="mini-cart-items">
+                    <!-- JS заполнит -->
+                    <div class="empty-note">Корзина пуста</div>
+                </div>
+
+                <div class="mini-cart-footer">
+                    <div class="mini-cart-total">Итого: <span id="miniCartTotal">0 ₽</span></div>
+                    <div class="mini-cart-actions">
+                        <a th:href="@{/cart}" class="btn">Открыть корзину</a>
+                        <button id="miniCartCheckout" class="btn primary">Оформить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<div class="main-container">
+    <!-- Sidebar (filters) -->
+    <aside class="sidebar">
+        <h3>Фильтры</h3>
+        <form th:action="@{/catalog}" method="get">
+            <input type="hidden" name="q" th:value="${q}">
+            <label>Категория</label>
+            <select name="category">
+                <option value="">Все</option>
+                <option th:value="Одежда" th:selected="${category == 'Одежда'}">Одежда</option>
+                <option th:value="Обувь" th:selected="${category == 'Обувь'}">Обувь</option>
+                <option th:value="Аксессуары" th:selected="${category == 'Аксессуары'}">Аксессуары</option>
+            </select>
+
+            <label>Бренд</label>
+            <select name="brand">
+                <option value="">Любой</option>
+                <option th:value="Nike" th:selected="${brand=='Nike'}">Nike</option>
+                <option th:value="Adidas" th:selected="${brand=='Adidas'}">Adidas</option>
+                <option th:value="Zara" th:selected="${brand=='Zara'}">Zara</option>
+            </select>
+
+            <label>Цена до (₽)</label>
+            <input type="number" name="maxPrice" th:value="${maxPrice}">
+
+            <label style="margin-top:12px;">Сортировать</label>
+            <select name="sort">
+                <option th:value="relevance" th:selected="${sort=='relevance'}">По релевантности</option>
+                <option th:value="price_asc" th:selected="${sort=='price_asc'}">Цена: по возрастанию</option>
+                <option th:value="price_desc" th:selected="${sort=='price_desc'}">Цена: по убыванию</option>
+            </select>
+
+            <button class="filter-btn" type="submit">Применить</button>
+        </form>
+    </aside>
+
+    <!-- Content -->
+    <main class="content">
+        <div th:replace="${view} :: content"></div>
+    </main>
+</div>
+
+<!-- Toast -->
+<div id="toast" class="toast" aria-live="polite" aria-atomic="true">
+    <div id="toastMessage"></div>
+</div>
+
+<script th:src="@{/js/cart.js}"></script>
+
+</body>
+</html>
